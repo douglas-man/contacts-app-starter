@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "contacts-app-starter"
+    }
+  },
+  "defaultProject": "contacts-app-starter",
+  "cli": {
+    "analytics": false
+  }
 }
