@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppMaterialModule } from './app.material.module';
+import { ContactsComponent } from './contacts/contacts.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
