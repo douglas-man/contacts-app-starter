@@ -1,18 +1,18 @@
-import { Contact } from './contact';
+import ContactClass from './contact';
 
-describe('Contact', () => {
-  let contact: Contact = null;
+describe('ContactClass tests', () => {
+  let contact: ContactClass = null;
 
   beforeEach(() => {
-    contact = new Contact();
-  })
+    contact = new ContactClass();
+  });
 
-  it('should create an instance', () => {
-    expect(contact).toBeTruthy();
+  it('should have a valid constructor', () => {
+    expect(contact).not.toBeNull();
   });
 
   it('should set name correctly through constructor', () => {
-    contact = new Contact('Liz');
+    contact = new ContactClass('Liz');
     expect(contact.name).toEqual('Liz');
   });
 
@@ -21,7 +21,32 @@ describe('Contact', () => {
     expect(contact.id).toEqual(1);
   });
 
+  it('should get and set name correctly', () => {
+    contact.name = 'Liz';
+    expect(contact.name).toEqual('Liz');
+  });
+
+  it('should get and set email correctly', () => {
+    contact.email = 'liz@sample.com';
+    expect(contact.email).toEqual('liz@sample.com');
+  });
+
+  it('should get and set number correctly', () => {
+    contact.number = '1234567890';
+    expect(contact.number).toEqual('1234567890');
+  });
+
+  it('should get and set country correctly', () => {
+    contact.country = 'United States';
+    expect(contact.country).toEqual('United States');
+  });
+
+  it('should get and set favorite correctly', () => {
+    contact.favorite = true;
+    expect(contact.favorite).toEqual(true);
+  });
+
   afterEach(() => {
     contact = null;
-  })
+  });
 });

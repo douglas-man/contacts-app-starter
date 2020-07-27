@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppMaterialModule } from './app.material.module';
@@ -19,6 +20,7 @@ import { ContactsComponent } from './contacts/contacts.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     AppMaterialModule
   ],
   providers: [],
